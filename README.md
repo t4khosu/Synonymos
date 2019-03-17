@@ -7,8 +7,9 @@ Es ist dabei möglich, als Eingabe eine eigene Datei vorzugeben oder einen Wiki-
 
 ## Eigene Texte
 `python synonymos.py -s="test.txt"`
-**test.txt :** Hello, how are you today?
-**result :** Welcome, how are you present-day?
+> Hello, how are you today?
+
+> Welcome, how are you present-day?
 
 ## Wiki Texte
 `python synonymos.py -s="Donald Trump" -w`
