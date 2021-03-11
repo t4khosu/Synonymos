@@ -1,18 +1,31 @@
 # Synonymos
-Mit dieser Software ist es möglich, Wörter von Texten englischer Sprache durch Synonyme zu ersetzen. Stop-Wörter werden dabei ignoriert!<br>
-Es ist dabei möglich, als Eingabe eine eigene Datei vorzugeben oder einen Wiki-Artikel. Vom Wiki-Artikel werden N-Sätze der Summary verwendet.
+
+If you have ever wanted to change a perfectly normal text into some gibberish, this tool is going to help you!
+Pass a wiki article URL, string or some textfile as parameter and all non-stopwords will be switched with some random synonym.
+Since wiki articles can be quite long, only the summary will be translated.
 
 ## Setup
-* `pip install -r requirements.txt`
+* Python >= 3.8 
+* Requirements: `pip install -r requirements.txt`
 
-## Eigene Texte
-`python synonymos.py -s="test.txt"`
-> Hello, how are you today?
+## Usage
+**Handle a simple string**
+```
+python syn.py -s <text>
+```
 
-> Welcome, how are you present-day?
+**Handle a .txt file** 
+```
+python syn.py -t <file path>
+```
 
-## Wiki Texte
-`python synonymos.py -s="Donald Trump" -w`
+**Handle a wikipedia entry** 
+```
+python syn.py -w <wiki URL>
+```
+
+## An example of Wiki Texte
+
 > Donald John Trump (born June 14, 1946) is the 45th and current president of the United States.
 Before entering politics, he was a businessman and television personality.
 Trump was born and raised in the New York City borough of Queens and received an economics degree from the Wharton School.
