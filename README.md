@@ -4,6 +4,11 @@ If you have ever wanted to change a perfectly normal text into some gibberish, t
 Pass a wiki article URL, string or some text file path as parameter and all non-stopwords will be switched with some random synonyms.
 Since wiki articles can be quite long, only the summary will be "translated".
 
+**The README Introduction after Synonymos has striked:**  
+_If you have always cherished to deepen a perfectly convention text into some gibberish, this instrument is become to help oneself you! Excrete a wiki article Url, string or some text cha
+rge way as parameter and all non-stopwords will be throw with some random synonym. Since wiki article can be quite retentive, only the compendious will be "translated"._
+
+
 ## Setup
 * Python >= 3.8 
 * Requirements: `pip install -r requirements.txt`
@@ -30,7 +35,7 @@ python syn.py -s <some string> -o <output dir>
 ```
 The output file will be called `.../syn.txt`
 
-## An example of Wiki Texte
+## Wiki article example
 
 > Donald John Trump (born June 14, 1946) is the 45th and current president of the United States.
 Before entering politics, he was a businessman and television personality.
