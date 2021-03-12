@@ -117,3 +117,5 @@ dmypy.json
 
 # Own
 results/
+
+.idea
