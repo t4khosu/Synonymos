@@ -56,12 +56,16 @@ def __text_to_gibberish(text, stopwords):
                 token = token[:-1]
 
             if token in stopwords:
-                syns.append(token)
+                syns.append(prefix + token + suffix)
+                continue
+
+            if any(not char.isalpha() for char in token):
+                syns.append(prefix + token + suffix)
                 continue
 
             token_syns = wordnet.synsets(token.lower())
             if not token_syns:
-                syns.append(token)
+                syns.append(prefix + token + suffix)
                 continue
 
             syn = random.choice(token_syns)
@@ -73,6 +77,6 @@ def __text_to_gibberish(text, stopwords):
             syn = syn.replace('_', ' ')
             syn = prefix + syn + suffix
             syns.append(syn)
-        gibberish = ' '.join(syns) + '\n'
+        gibberish += ' '.join(syns) + '\n'
 
     return gibberish

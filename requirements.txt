@@ -4,10 +4,10 @@ chardet==4.0.0
 click==7.1.2
 idna==2.10
 joblib==1.0.1
-nltk==3.5
+nltk>=3.5
 regex==2020.11.13
-requests==2.25.1
+requests>=2.25.1
 soupsieve==2.2
-tqdm==4.59.0
-urllib3==1.26.3
+tqdm>=4.59.0
+urllib3>=1.26.3
 wikipedia==1.4.0

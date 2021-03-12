@@ -21,7 +21,7 @@ python syn.py -t <file path>
 
 **Handle a wikipedia entry** 
 ```
-python syn.py -w <wiki URL>
+python syn.py -w <wiki title>
 ```
 
 ## An example of Wiki Texte
